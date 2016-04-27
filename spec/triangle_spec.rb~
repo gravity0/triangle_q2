@@ -1,0 +1,15 @@
+
+describe Triangle do
+  it "2, 3, 4の場合、不等辺三角形" do
+    expect(Triangle.getType).to eq "不等辺三角形ですね！"
+  end
+  it "2, 2, 1の場合、二等辺三角形" do
+    expect(Triangle.getType).to eq "二等辺三角形ですね！"
+  end
+  it "1, 1, 1の場合、正三角形" do
+    expect(Triangle.getType).to eq "正三角形ですね！"
+  end
+  it "1, 2, 3の場合、三角形ではない" do
+    expect(Triangle.getType).to eq "三角形じゃないです＞＜"
+  end
+end
